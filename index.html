@@ -3,34 +3,38 @@
 <!--이 태그 안에 모든 html내용이 들어감 언어 속성도 지명해줘야함-->
 
 <head>
-<!--이 head안에는 제목, 스타일, 스립트 메타 정ㅗ와 같은 보이지 않는 웹페이지에 대한 정보를 담고있음-->
+    <!--이 head안에는 제목, 스타일, 스립트 메타 정ㅗ와 같은 보이지 않는 웹페이지에 대한 정보를 담고있음-->
     <meta charset="utf-8" />
     <!--meta부분에 문서에 관한 추가정보를 제공한다-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-    <!--페이지 제목으로 브라우저 탭 등에 표사됨-->
+        <!--페이지 제목으로 브라우저 탭 등에 표사됨-->
         TO DO LIST
     </title>
 </head>
 
 <body>
-<!-- 본격적으로 유저에게 보이는 컨텐츠를 넣는 곳-->
-<div class="input-container">
-<!--div는 html요소들을 무리짓기위해 사용. 상자라고 생각하자 (섹션나누기에 좋음)-->
-    <h1>할 일 목록</h1>  
+    <!-- 본격적으로 유저에게 보이는 컨텐츠를 넣는 곳-->
+    <div class="container">
+        <div class="input-container">
+            <!--div는 html요소들을 무리짓기위해 사용. 상자라고 생각하자 (섹션나누기에 좋음)-->
+            <input id="input" placeholder="예)빡공팟 공부하기" />
+            <!--id는 이 태그에 이름을 붙여 javascript나 css에서 이 태그를 선택하여 사용하도록 해준다-->
+            <!--placeholder는 힌트같은 걸 준다-->
 
-    <input id="input" placeholder="예)빡공팟 공부하기" />
-    <!--id는 이 태그에 이름을 붙여 javascript나 css에서 이 태그를 선택하여 사용하도록 해준다-->
-    <!--placeholder는 힌트같은 걸 준다-->
+            <!--버튼 태그를 사용하여 버튼을 만들고 속성으로 id를 설정해준다-->
+            <button id="add-button">추가</button>
+        </div>
+        <div class="list-container">
+            <h1>할 일 목록</h1>
+            <ul id="list">
+                <!--ul로 리스트를 만든다 목록을 떙떙이로 만들어주는 ul이다-->
+                <li class="list-item">우선 컴퓨터 키기</li>
+            </ul>
 
-    <!--버튼 태그를 사용하여 버튼을 만들고 속성으로 id를 설정해준다-->
-    <button id="add-button">추가</button>
 
-</div>
-
-
-
-
+        </div>
+    </div>
 
 
 </body>
