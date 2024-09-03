@@ -9,10 +9,10 @@
     /* 위 아래 여백을 32픽셀로 해준다 이쁘게 */
 }
 
-.input_container {
+.input-container {
     /* div class 인 input container를 스타일링해준다 */
 
-    width: 80;
+    width: 80%;
     display: flex;
     /* flex를 사용해서 요소를 중앙에 위치하게 만든 후 밑에 자식 요소들이 자동으로 거리를 두게한다 */
     align-self: center;
